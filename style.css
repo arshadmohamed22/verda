@@ -9,7 +9,9 @@ html {
    	position: relative;
 	min-height: 100%;
 }
-
+.home-body {
+    height: 3618px;
+}
 /* ----- Nav Bar ----- */
 .nav-bar {
 	position: absolute;
