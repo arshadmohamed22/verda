@@ -1,2 +1,2 @@
 # verda
-website for Verda I developed
+Website for Verda I developed :)
