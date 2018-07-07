@@ -89,7 +89,7 @@
 					<input type="text" name="name" id="name" placeholder="NAME">
 					<input type="text" name="email" id="email" placeholder="EMAIL">
 					<input type="text" name="subject" id="subject" placeholder="SUBJECT">
-					<textarea id="message" placeholder="MESSAGE"></textarea>
+					<textarea name="message" id="message" placeholder="MESSAGE"></textarea>
 				</div>
 				<input type="submit" id="submit" name="submit" value="SEND MESSAGE" class="hover-up">
 			</form>
@@ -128,11 +128,12 @@
 		<div class="popup-content">
     		<span class="close">&times;</span>
     		<div class="sign-up head-text">
-    			<h2>Sign Up</h2>
+    			<h2 id="signup-title" class="title active">Sign Up</h2>
+    			<h2 id="feedback-title" class="title">Feedback</h2>
 				<div class="small-green-rect"></div>
     		</div>
 
-    		<div class="btn-group signup-btn-group" id="btn-group-3">
+    		<div class="btn-group signup-btn-group active" id="btn-group-3">
 				<button id="consumer-sign-up-btn" class="active-btn">CONSUMER</button>
 				<button id="retail-sign-up-btn">RETAIL</button> 
 				<button id="wholesale-sign-up-btn">WHOLESALE</button> 
@@ -197,10 +198,12 @@
 					<input type="submit" name="submit" id="wholesale-submit" value="SIGN UP">
 				</form>
 			</div>
+			<div id="feedback" class="sign-up-form"></div>
   		</div>
 	</div>
 
 	<!-- need this to prevent popup from not closing -->
+	<span id="feedback-btn" style="display: none;"></span>
 	<span id="consumer-btn" style="display: none"></span>
 	<span id="retail-btn" style="display: none"></span>
 	<span id="wholesale-btn" style="display: none"></span>
