@@ -140,29 +140,40 @@
 
 			<div id="consumer-sign-up" class="sign-up-form active-form">
 				<form id="consumer-form">
-					<input class="large-input" type="text" name="name" id="name" placeholder="NAME">
-					<input class="large-input" type="text" name="email" id="user-email" placeholder="EMAIL">
+					<input class="full-input" type="text" name="name" id="name" placeholder="NAME">
+					<input class="full-input" type="text" name="email" id="user-email" placeholder="EMAIL">
 					<br>
-					<input class="medium-input" type="text" name="username" id="username" placeholder="USERNAME">
-					<input class="medium-input" type="password" name="pasword" id="password" placeholder="PASSWORD">
+					<input class="half-input" type="text" name="username" id="username" placeholder="USERNAME">
+					<input class="half-input" type="password" name="pasword" id="password" placeholder="PASSWORD">
 					<br>
-					<input class="small-input" type="text" name="city" id="user-city" placeholder="CITY">
-					<input class="small-input" type="text" name="province" id="user-province" placeholder="PROVINCE">
-					<input class="small-input" type="text" name="country" id="user-country" placeholder="COUNTRY">
+					<input class="half-input" type="text" name="city" id="user-city" placeholder="CITY">
+					<input class="half-input" type="text" name="province" id="user-province" placeholder="PROVINCE">
 					<br>
+					<select name="gender" class="half-select">
+						<option disabled selected>GENDER</option>
+					  	<option value="male">MALE</option>
+					  	<option value="female">FEMALE</option>
+					  	<option value="other">PREFER NOT TO SAY</option>
+					</select>
+					<select name="device" class="half-select">
+						<option disabled selected>DEVICE</option>
+					  	<option value="android">ANDROID</option>
+					  	<option value="phone">IPHONE</option>
+					</select>
 					<input type="submit" name="submit" id="consumer-submit" value="SIGN UP">
 				</form>
 			</div>
 			<div id="retail-sign-up" class="sign-up-form">
 				<form id="retail-form">
-					<input class="large-input" type="text" name="name" id="retail-name" placeholder="NAME">
-					<input class="large-input" type="text" name="title" id="retail-title" placeholder="TITLE">
+					<input class="full-input" type="text" name="name" id="retail-name" placeholder="NAME">
 					<br>
-					<input class="medium-input" type="text" name="phone" id="retail-phone" placeholder="PHONE">
-					<input class="large-input" type="text" name="website" id="retail-website" placeholder="WEBSITE (IF APPLICABLE)">
+					<input class="half-input" type="text" name="title" id="retail-title" placeholder="TITLE">
+					<input class="half-input" type="text" name="phone" id="retail-phone" placeholder="PHONE">
 					<br>
-					<input class="large-input" type="text" name="business-name" id="retail-business" placeholder="BUSINESS NAME">
-					<input class="large-input" type="text" name="email" id="retail-email" placeholder="BUSINESS EMAIL">					
+					<input class="full-input" type="text" name="website" id="retail-website" placeholder="WEBSITE (IF APPLICABLE)">
+					<br>
+					<input class="half-input" type="text" name="business-name" id="retail-business" placeholder="BUSINESS NAME">
+					<input class="half-input" type="text" name="email" id="retail-email" placeholder="BUSINESS EMAIL">					
 					<br>
 					<input class="full-input" type="text" name="locations" id="retail-locations" placeholder="LOCATION(S)">
 					<br>
@@ -171,14 +182,15 @@
 			</div>
 			<div id="wholesale-sign-up" class="sign-up-form">
 				<form id="wholesale-form">
-					<input class="large-input" type="text" name="name" id="wholesale-name" placeholder="NAME">
-					<input class="large-input" type="text" name="title" id="wholesale-title" placeholder="TITLE">
+					<input class="full-input" type="text" name="name" id="wholesale-name" placeholder="NAME">
 					<br>
-					<input class="medium-input" type="text" name="phone" id="wholesale-phone" placeholder="PHONE">
-					<input class="large-input" type="text" name="website" id="wholesale-website" placeholder="WEBSITE (IF APPLICABLE)">
+					<input class="half-input" type="text" name="title" id="wholesale-title" placeholder="TITLE">
+					<input class="half-input" type="text" name="phone" id="wholesale-phone" placeholder="PHONE">
 					<br>
-					<input class="large-input" type="text" name="business-name" id="wholesale-business" placeholder="BUSINESS NAME">
-					<input class="large-input" type="text" name="email" id="wholesale-email" placeholder="BUSINESS EMAIL">					
+					<input class="full-input" type="text" name="website" id="wholesale-website" placeholder="WEBSITE (IF APPLICABLE)">
+					<br>
+					<input class="half-input" type="text" name="business-name" id="wholesale-business" placeholder="BUSINESS NAME">
+					<input class="half-input" type="text" name="email" id="wholesale-email" placeholder="BUSINESS EMAIL">					
 					<br>
 					<input class="full-input" type="text" name="locations" id="wholesale-locations" placeholder="LOCATION(S)">
 					<br>
