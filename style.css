@@ -14,11 +14,11 @@ html {
 }
 img {
 	user-drag: none; 
-user-select: none;
--moz-user-select: none;
--webkit-user-drag: none;
--webkit-user-select: none;
--ms-user-select: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
 }
 ::selection {
 	background-color: rgba(0, 228, 173, 0.3);
@@ -351,7 +351,7 @@ button:focus {outline:0;}
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	height: 243px;
+	height: 250px;
 	width: 100%;
 	background-color: #4A4A4A;
 	color: #FFFFFF;
@@ -365,7 +365,7 @@ button:focus {outline:0;}
 	display:table;
     width: 100%;
     height: auto;
-    padding-bottom: 4%;
+    padding-bottom: 3%;
 }
 .tr {
 	display:table-row;
@@ -403,7 +403,7 @@ button:focus {outline:0;}
 }
 .footer-bottom {
 	text-align: center;
-	margin: 0 auto;
+	margin: 0 auto 5% auto;
 	width: 90%;
 }
 .footer-bottom hr {
@@ -691,6 +691,9 @@ button:focus {outline:0;}
 	width: 100%;
 	height: 250px;
 }
+textarea {
+  resize: none;
+}
 .contact-us #submit {
 	margin: 3% auto;
 	height: 66px;	
@@ -765,6 +768,8 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
 	display: block;
 }
 .horizontal-divs {
+	position: relative;
+	z-index: 5;
 	margin: 0 auto;
 	width: 90%;
 	height: 10%;
@@ -944,6 +949,14 @@ iframe {
 	.team div:hover {
 		margin-top: 1%;
 	}
+	.team div h3 {
+		font-size: 20px;
+		line-height: 28px;
+	}
+	.team div p {
+		font-size: 13px;
+		line-height: 18px;
+	}
 	/* Services */
 	.consumer-body {
 		height: 3015px;
@@ -1066,11 +1079,14 @@ iframe {
 	.about-full-gradient {
     	top: 10%;
 	}
+	.team {
+		width: 60%;
+	}
 	.team div {
 		margin-top: 1.5%;
 		padding: 3% 1% 0 1%; 
 		width: 26%;
-		height: 30%;
+		height: 35%;
 	}
 	.team div:hover {
 		margin-top: 1.1%;
@@ -1151,7 +1167,7 @@ iframe {
 		padding: 3px 7px;
 	}
 	.device-icons {
-		margin: 40% 1.4% 0 44%;
+		margin: 20% 1.4% 0 44%;
 	}
 	.gradient-green-box {
 		height: 280px;
@@ -1170,7 +1186,13 @@ iframe {
 		font-size: 18px;
 		line-height: 26px;
 	}
+	.home-head-text {
+		margin-top: 20%;
+	}
 	/* About */
+	.about-head-text {
+		margin-top: 10%;
+	}
 	.contact-us {
 		margin-top: 0%;
 	}
@@ -1183,6 +1205,9 @@ iframe {
 	}
 	.services-head-text h2 {
 		margin-top: 5%;
+	}
+	.retail-head-text {
+    	height: 8%;
 	}
 	.services-btn-group button {
     	font-size: 15px;
@@ -1318,7 +1343,7 @@ iframe {
 		margin-top: 4%;
 		padding: 3% 1% 0 1%; 
 		width: 26%;
-		height: 25%;
+		height: 30%;
 	}
 	.team div:hover {
 		margin-top: 3.7%;
@@ -1519,6 +1544,12 @@ iframe {
 	.team {
 		height: 700px;
 	}
+	.team div {
+		margin-top: 2%;
+	}
+	.team div:hover {
+		margin-top: 1.5%;
+	}
 	.consumer-body {
 		height: 4000px;
 	}
@@ -1559,6 +1590,15 @@ iframe {
 	.body-text button {
 		font-size: 28px;
 		line-height: 35px;
+	}
+	.team {
+		height: 740px;
+	}
+	.team div {
+		margin-top: 1%;
+	}
+	.team div:hover {
+		margin-top: 0.5%;
 	}
 	.map {
 		margin-top: 20%;
