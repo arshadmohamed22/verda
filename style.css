@@ -502,7 +502,7 @@ button:focus {outline:0;}
 	border: 2px solid #D4D4D4;
 	color: #636363;
 }
-.sign-up-form select {
+.sign-up-form select:first-child {
 	color: #D4D4D4;
 }
 .full-input {
