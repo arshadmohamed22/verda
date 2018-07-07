@@ -469,7 +469,11 @@ button:focus {outline:0;}
 	line-height: 56px;
 	margin: 7% auto 2% auto;
 }
+.title {
+	display: none;
+}
 .signup-btn-group {
+	display: none;
 	margin: 0 auto;
 	width: 100%;
 	float: none;
@@ -492,7 +496,7 @@ button:focus {outline:0;}
 .sign-up-form ::placeholder {
 	color: #D4D4D4;	
 }
-.sign-up-form input, .sign-up-form select {
+.sign-up-form input, .sign-up-form select, .sign-up-form textarea {
 	margin: 1%;
 	font-family: "Roboto Condensed";	
 	font-size: 20px;	
@@ -505,6 +509,9 @@ button:focus {outline:0;}
 .sign-up-form select {
 	color: #D4D4D4;
 }
+.sign-up-form textarea {
+	height: 150px;
+}
 .full-input {
 	width: 85%;
 }
@@ -514,7 +521,7 @@ button:focus {outline:0;}
 .half-select {
 	width: 47.2%;
 }
-#consumer-submit, #retail-submit, #wholesale-submit {
+#consumer-submit, #retail-submit, #wholesale-submit, #feedback-submit {
 	margin: 3% 35%;
 	height: 56px;	
 	width: 150px;
@@ -539,6 +546,9 @@ button:focus {outline:0;}
 .active-form {
 	display: block;
 }
+.active {
+	display: block;
+}
 
 /* ----------------- ABOUT --------------------- */
 .about-body {
@@ -556,12 +566,12 @@ button:focus {outline:0;}
 	margin-bottom: 0;
 }
 .about-full-gradient {
-	top: 12%;
+	top: 10%;
 }
 .about-gradient-green-box {
 	position: absolute;
 	float: left;
-	top: 26%;
+	top: 24%;
 	left: 0;
 	height: 120px;
 	width: 60%;
@@ -570,7 +580,7 @@ button:focus {outline:0;}
 .about-circles {
 	position: absolute;
 	float: left;
-	top: 31.5%;
+	top: 29.5%;
 	left: 2%;
 	height: 17%;
 	width: 47%;
@@ -578,7 +588,7 @@ button:focus {outline:0;}
 .team {
 	position: absolute;
 	float: left;
-	top: 27.5%;
+	top: 25.5%;
 	left: 1%;
 	width: 55%;
 	height: 600px;
@@ -634,7 +644,7 @@ button:focus {outline:0;}
 }
 .about-body-text {
 	position: absolute;
-	top: 26%;
+	top: 24%;
 	right: 5%;
 	width: 30%;
 	height: auto;	
@@ -673,7 +683,7 @@ button:focus {outline:0;}
 .form ::placeholder {
 	color: #D4D4D4;	
 }
-.form input, textarea {
+.form input, .form textarea {
 	margin: 1%;
 	font-family: "Roboto Condensed";	
 	font-size: 20px;	
@@ -1314,7 +1324,10 @@ iframe {
 		top: 38%;
 	}
 	.table {
-		padding-bottom: 2%;
+		padding-bottom: 1%;
+	}
+	.footer {
+		height: 260px;
 	}
 	.footer-left, .footer-center, .footer-right {
 		display: block;
@@ -1468,7 +1481,7 @@ iframe {
 	}
 	.popup-content {
 		margin: 0;
-		width: 100%;
+		width: 100vw;
 		height: 100%;
 		box-shadow: none;
 		border: none;
@@ -1508,6 +1521,10 @@ iframe {
 	}
 }
 @media only screen and (min-width: 1440px) {
+	.logo {
+    	margin-top: -35%;
+    	height: 160px;
+	}
 	.home-body {
 		height: 3815px;
 	}
@@ -1550,6 +1567,10 @@ iframe {
 
 }
 @media only screen and (min-width: 1600px) {
+	.logo {
+    	margin-top: -35%;
+    	height: 170px;
+	}
 	.home-body {
 		height: 4238px;
 	}
@@ -1670,6 +1691,9 @@ iframe {
 	.popup-content {
     	width: 37%;
 	}
+	.footer {
+		height: 270px;
+	}
 }
 @media only screen and (min-width: 2560px) {
 	.home-body {
@@ -1750,5 +1774,11 @@ iframe {
 	}
 	#consumer-submit, #retail-submit, #wholesale-submit {
     	margin: 6% 40% 3% 40%;
+    }
+    .table {
+    	padding-bottom: 1%;
+    }
+    .footer-left, .footer-right {
+    	padding-top: 3%;
     }
 }
