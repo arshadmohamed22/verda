@@ -17,7 +17,7 @@
 
 	<header class="nav-bar">
 		<div class="logo-div">
-			<a href="/verda/"><img class='logo' id="logo" src="../assets/Logo2.png"></a>
+			<a href="/"><img class='logo' id="logo" src="../assets/Logo2.png"></a>
 		</div>
 		<div class="btn-group nav-btn-group" id="btn-group">
 			<a href="../about/"><button class="nav-btns">About</button></a>
@@ -101,8 +101,8 @@
 			<div class="tr">
 				<div class="footer-left">
 					<b>CONTACT DETAILS</b><br>
-					hello@verda.ca<br>
-					123-999-1231
+					contact@verda.ca<br>
+					(905) 599-2252
 				</div>
 				<div class="footer-center">
 					Verda is not a dispensary and does not sell cannabis. Verda is a service that connects persons of age with local dispensaries. Verda operates in full compliance with all applicable municipal, provincial and federal laws.
@@ -144,22 +144,15 @@
 					<input class="full-input" type="text" name="name" id="name" placeholder="NAME">
 					<input class="full-input" type="text" name="email" id="user-email" placeholder="EMAIL">
 					<br>
-					<input class="half-input" type="text" name="username" id="username" placeholder="USERNAME">
-					<input class="half-input" type="password" name="pasword" id="password" placeholder="PASSWORD">
+					<input class="full-input" type="text" name="phone" id="user-phone" placeholder="PHONE">
 					<br>
 					<input class="half-input" type="text" name="city" id="user-city" placeholder="CITY">
 					<input class="half-input" type="text" name="province" id="user-province" placeholder="PROVINCE">
 					<br>
-					<select name="gender" class="half-select">
-						<option disabled selected>GENDER</option>
-					  	<option value="male">MALE</option>
-					  	<option value="female">FEMALE</option>
-					  	<option value="other">PREFER NOT TO SAY</option>
-					</select>
-					<select name="device" class="half-select">
-						<option disabled selected>DEVICE</option>
-					  	<option value="android">ANDROID</option>
-					  	<option value="phone">IPHONE</option>
+					<select name="device" class="full-select">
+						<option class="full-select" disabled selected>DEVICE</option>
+					  	<option class="full-select" value="android">ANDROID</option>
+					  	<option class="full-select" value="phone">IPHONE</option>
 					</select>
 					<input type="submit" name="submit" id="consumer-submit" value="SIGN UP">
 				</form>
@@ -198,7 +191,15 @@
 					<input type="submit" name="submit" id="wholesale-submit" value="SIGN UP">
 				</form>
 			</div>
-			<div id="feedback" class="sign-up-form"></div>
+			<div id="feedback" class="sign-up-form">
+				<form id="feedback-form">
+					<input class="full-input" type="text" name="name" id="feedback-name" placeholder="NAME">
+					<input class="full-input" type="text" name="email" id="feedback-email" placeholder="EMAIL">
+					<textarea class="full-input" name="message" id="feedback-message" placeholder="YOUR FEEDBACK"></textarea>
+					<br>
+					<input type="submit" name="submit" id="feedback-submit" value="SUBMIT">
+				</form>
+			</div>
   		</div>
 	</div>
 
