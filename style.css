@@ -505,6 +505,10 @@ button:focus {outline:0;}
 	background-color: rgba(239,239,239,0.3);
 	border: 2px solid #D4D4D4;
 	color: #636363;
+	-ms-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	-webkit-box-sizing:content-box; 
+	box-sizing:content-box;
 }
 .sign-up-form select {
 	color: #D4D4D4;
@@ -515,16 +519,18 @@ button:focus {outline:0;}
 .full-input {
 	width: 85%;
 }
-.half-input {
-	width: 35%;
+.sign-up-form .half-input {
+	width: 40.9%;
+	padding: 15px 15px 15px 15px;
+	margin: 1%;
 }
-.half-select {
-	width: 47.2%;
+.full-select {
+	width: 85%;
 }
 #consumer-submit, #retail-submit, #wholesale-submit, #feedback-submit {
 	margin: 3% 35%;
-	height: 56px;	
-	width: 150px;
+	height: 40px;	
+	width: 100px;
 	border-radius: 5px;
 	border: none;
 	color: white;
@@ -917,6 +923,11 @@ iframe {
 
 
 /* --- small Laptop screen sizes --- */
+@media only screen and (max-width: 1200px) {
+	.sign-up-form .half-input {
+    	width: 40.5%;
+	}
+}
 @media only screen and (max-width: 1150px) {
 	/* Home */
 	.home-body {
@@ -1020,21 +1031,23 @@ iframe {
 		padding: 15px 15px;
 	}
 	#consumer-submit, #retail-submit, #wholesale-submit {
-    	margin: 3% 30%;
+    	margin: 3% 33%;
+    	height: 40px;
+    	width: 100px;
+    	font-size: 20px;
     }
-    .sign-up-form input, select {
-    	margin: 1.5% 1%;
-    }
-    .full-input {
-    	width: 87%;
-    }
-    .half-input {
-    	width: 37.8%;
+    .sign-up-form .half-input {
+    	width: 37.2%;
 	}
-	.half-select {
-		width: 46%;
+	.sign-up-form {
+		padding: 0 10% 0 11%;
 	}
 	
+}
+@media only screen and (max-width: 1000px) {
+	.sign-up-form .half-input {
+    	margin: 1% 0.2% 1% 1%;
+    }
 }
 
 /* --- Tablet screen sizes --- */
@@ -1153,13 +1166,27 @@ iframe {
 		height: auto;
 	}
 	.sign-up {
-		height: 20%;
+		margin: 10% auto;
 	}
-	.half-input {
-    	width: 36.5%;
+	.sign-up-form .half-input {
+    	width: 36.8%;
 	}
 }
-
+@media only screen and (max-width: 850px) {
+	.sign-up-form .half-input {
+    	width: 36.4%;
+	}
+}
+@media only screen and (max-width: 800px) {
+	.sign-up-form .half-input {
+    	width: 36%;
+	}
+	#consumer-submit, #retail-submit, #wholesale-submit {
+   	 	margin: 3% 30%;
+    	height: 35px;
+    	width: 100px;
+	}
+}
 /* --- Tablet - Mobile screen sizes --- */
 @media only screen and (max-width: 770px) {
 	/* Home */
@@ -1267,7 +1294,7 @@ iframe {
     	line-height: 21px;
 	}
 	#consumer-submit, #retail-submit, #wholesale-submit {
-    	margin: 3% 30%;
+    	margin: 3% 32%;
 	}
 	.popup {
 		padding-top: 20%;
@@ -1277,6 +1304,48 @@ iframe {
 	}
 	.sign-up-form {
 		margin-top: 7%;
+	}
+	.sign-up-form .half-input {
+    	width: 37.5%;
+	}
+}
+@media only screen and (max-width: 700px){
+	.sign-up-form .half-input {
+    	width: 37.1%;
+	}
+}
+@media only screen and (max-width: 650px){
+	.sign-up-form .half-input {
+    	width: 36.9%;
+	}
+}
+@media only screen and (max-width: 600px){
+	.sign-up-form .half-input {
+    	width: 36.2%;
+	}
+}
+@media only screen and (max-width: 550px){
+	.sign-up-form .half-input {
+    	width: 36%;
+	}
+}
+@media only screen and (max-width: 500px){
+	.sign-up-form .half-input {
+    	width: 36.2%;
+    	padding: 15px 12px 15px 15px;
+	}
+	#consumer-submit, #retail-submit, #wholesale-submit {
+    	margin: 3% 28%;
+    	height: 30px;
+	}
+}
+@media only screen and (max-width: 450px) {
+	.sign-up-form .half-input {
+    	width: 36%;
+    	padding: 15px 12px 15px 15px;
+	}
+	#consumer-submit, #retail-submit, #wholesale-submit {
+    	margin: 3% 25%;
 	}
 }
 
@@ -1502,6 +1571,42 @@ iframe {
 		padding: 0 5%;
     	width: 90%;
 	}
+	.sign-up-form .half-input {
+    	width: 36.8%;
+    	padding: 15px 15px 15px 15px;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.sign-up-form .half-input {
+    	width: 36.4%;
+    	padding: 15px 15px 15px 15px;
+	}
+}
+@media only screen and (max-width: 375px) {
+	.services-btn-group button {
+    	font-size: 12px;
+    	line-height: 18px;
+    	padding: 13px 10px;
+    	width: 35%;
+    	margin: 0 1%;
+	}
+	.sign-up-form .half-input {
+    	width: 36.4%;
+    	padding: 15px 14px 15px 15px;
+	}
+	.services-head-text {
+    	padding: 13% 5%;
+    	width: 90%;
+	}
+	.services-head-text h2 {
+    	margin-top: 15%;
+    	font-size: 35px;
+    	line-height: 48px;
+	}
+	.services-head-text p {
+    	font-size: 12px;
+    	line-height: 17px;
+	}
 }
 
 
@@ -1518,6 +1623,9 @@ iframe {
 	}
 	.retail-body {
 		height: 2615px;
+	}
+	.sign-up-form .half-input {
+   		padding: 15px 0px 15px 30px;
 	}
 }
 @media only screen and (min-width: 1440px) {
@@ -1623,9 +1731,7 @@ iframe {
 	.sign-up-form {
 		margin-top: 10%;
 	}
-	#consumer-submit, #retail-submit, #wholesale-submit {
-    	margin-top: 6%;
-    }
+    
 }
 @media only screen and (min-width: 1920px) {
 	.home-body {
@@ -1700,7 +1806,10 @@ iframe {
 		height: 5900px;
 	}
 	.logo {
-    	margin-top: -20%;
+    	margin-top: -43%;
+    }
+    .btn-group {
+    	margin-top: 1.3%;
     }
 	.map {
 		margin-top: 0%;
@@ -1766,14 +1875,11 @@ iframe {
     	width: 35%;
     	height: 70%;
 	}
-	.half-input {
-    	width: 37%;
-	}
-	.half-select {
-    	width: 46%;
+	.sign-up-form {
+		padding-left: 12%;
 	}
 	#consumer-submit, #retail-submit, #wholesale-submit {
-    	margin: 6% 40% 3% 40%;
+    	margin: 6% 40% 3% 35%;
     }
     .table {
     	padding-bottom: 1%;
